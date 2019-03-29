@@ -9,13 +9,15 @@ ZetCode PyQt5 教程
 网站: zetcode.com
 最后一次编辑: January 2015
 """
-import login
+from view.texture.edit import EditTextureDialog
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QDialog
+from PyQt5.QtWidgets import QApplication
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-
-    loginDialog = login.LoginDialog()
+    # http.print()
+    # response = login_service.login("111","111",False)
+    # print(response.content.decode('utf-8'))
+    loginDialog = EditTextureDialog()
     loginDialog.show()
     sys.exit(app.exec_())
